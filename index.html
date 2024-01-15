@@ -21,5 +21,79 @@
     <strong>strong 태그입니다</strong> <br />
     <i> i 태그입니다</i> <br />
     <em> em 태그입니다</em> <br />
+
+    <h3>4. a</h3>
+    <a href="https://www.naver.com/">네이버로 이동하기</a>
+
+    <h3>5. button</h3>
+    <button onclick="alert('Hello!')">클릭해보시오</button>
+
+    <h3>6. input</h3>
+    <label for="input">수정해보세요</label>
+    <input type="text" value="프로디지털 아카데미" id="input" readonly />
+
+    <h3>7. form</h3>
+    <form action="/submit" method="post">
+      <input type="text" name="username" placeholder="사용자명" />
+      <input type="password" name="password" placeholder="비밀번호" />
+      <button type="submit">제출</button>
+    </form>
+
+    <h3>8. select</h3>
+    <select>
+      <option value="1">피자</option>
+      <option value="2">치킨</option>
+      <option value="3">떡볶이</option>
+    </select>
+
+    <h3>9. fieldset, legend</h3>
+    <fieldset>
+      <legend>햄최몇?</legend>
+      <label for="username">이름을 입력하세요</label>
+      <input type="text" id="username" name="username" /><br /><br />
+
+      <label for="amount">먹을 수 있는 햄버거 개수를 선택하세요</label>
+      <input type="radio" id="amount" name="amount" value="one" />1개
+      <input type="radio" id="amount" name="amount" value="two" />2개
+      <input type="radio" id="amount" name="amount" value="three" />3개
+    </fieldset>
+
+    <h3>10. iframe</h3>
+    <iframe src="https://www.naver.com" width="600" height="400"></iframe>
+
+    <br /><br />
+    <h3>11. 시맨틱 태그</h3>
+    <header>
+      <h1>웹 페이지 제목</h1>
+      <nav>
+        <ul>
+          <li>메뉴 1</li>
+          <li>메뉴 2</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>섹션 제목</h2>
+        <p>섹션의 내용을 여기에</p>
+      </section>
+
+      <section>
+        <h2>또 다른 섹션</h2>
+        <article>
+          <h3>글 제목</h3>
+          <p>글 내용을 작성합니다.</p>
+        </article>
+
+        <aside>
+          <h4>사이드바</h4>
+          <p>부가적인 정보를 여기에</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>&coprod; 2024 웹 페이지</p>
+    </footer>
   </body>
 </html>
