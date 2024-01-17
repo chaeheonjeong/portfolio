@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-36H7TFBJE3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-36H7TFBJE3");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="../Day3/responsive.css"
+      media="screen and (max-width: 390px)"
+    />
   </head>
   <body>
     <nav>
-      <!-- pure HTML/CSS/JS -->
-      <div class="navItem">Home</div>
-
       <!-- 리액트/뷰같은 프레임워크 스타일 -->
+      <div class="navItem">Home</div>
       <div class="navItem">Project</div>
       <div class="navItem">Recommend</div>
-      <div class="navItem">Home</div>
+      <div class="navItem">Contact</div>
     </nav>
 
     <header>
@@ -27,12 +45,18 @@
             정채헌입니다.<br />
           </h1>
           <div class="headerLinkContainer">
-            <a class="headerLinkG" href="https://www.google.com" target="_blank"
-              ><div class="headerFontG">Github Link</div></a
+            <a
+              class="headerLinkG"
+              href="https://www.google.com"
+              target="_blank"
             >
-            <a class="headerLinkR headerFontR" href="#" target="_blank"
-              ><div class="headerFontR">Resume Link</div></a
-            >
+              <div class="headerFontG">Github Link</div>
+            </a>
+            <a class="headerLinkR" href="#" target="_blank">
+              <div class="headerFontR" onclick="onclickButton('resume')">
+                Resume Link
+              </div>
+            </a>
           </div>
         </div>
 
@@ -65,7 +89,8 @@
         강력한 분석 및 문제 해결 능력으로 효율적이고 확장 가능한 코드를 작성하는
         것에 자부심을 가지고 있습니다. <br />
         팀과 함께 협력하며, 사용자 중심의 솔루션을 만들기 위해 노력하고
-        있습니다. 끊임없는 도전을 통해 성장하는 개발자로서 기여하고 싶습니다.
+        있습니다. <br />
+        끊임없는 도전을 통해 성장하는 개발자로서 기여하고 싶습니다.
       </div>
     </div>
 
@@ -78,73 +103,68 @@
         </div>
       </div>
       <div class="stackLanIdeContainer">
-        <div class="stackLanguage">
-          <img src="../images/js.svg" alt="js image" class="stackImageJs" />
-          <img
-            src="../images/react.svg"
-            alt="react image"
-            class="stackImageReact"
-          />
-          <img
-            src="../images/nodejs.png"
-            alt="node.js image"
-            class="stackImageNode"
-          />
-          <img
-            src="../images/springboot.png"
-            alt="springboot image"
-            class="stackImageSpring"
-          />
-          <img
-            src="../images/java.png"
-            alt="java image"
-            class="stackImageJava"
-          />
-        </div>
-        <div class="stackLanguage">
-          <img src="../images/git.svg" alt="git image" class="stackImageGit" />
-          <img
-            src="../images/github.svg"
-            alt="github image"
-            class="stackImageGitHub"
-          />
-          <img
-            src="../images/intellij.png"
-            alt="intellij image"
-            class="stackImageIntelliJ"
-          />
-          <img
-            src="../images/eclipse.png"
-            alt="eclipse image"
-            class="stackImageEclipse"
-          />
-          <img
-            src="../images/vscode.svg"
-            alt="vscode image"
-            class="stackImageVscode"
-          />
-        </div>
+        <img src="../images/js.svg" alt="js image" class="stackImageJs" />
+        <img
+          src="../images/react.svg"
+          alt="react image"
+          class="stackImageReact"
+        />
+        <img
+          src="../images/nodejs.png"
+          alt="node.js image"
+          class="stackImageNode"
+        />
+        <img
+          src="../images/springboot.png"
+          alt="springboot image"
+          class="stackImageSpring"
+        />
+        <img src="../images/java.png" alt="java image" class="stackImageJava" />
+        <img src="../images/git.svg" alt="git image" class="stackImageGit" />
+        <img
+          src="../images/github.svg"
+          alt="github image"
+          class="stackImageGitHub"
+        />
+        <img
+          src="../images/intellij.png"
+          alt="intellij image"
+          class="stackImageIntelliJ"
+        />
+        <img
+          src="../images/eclipse.png"
+          alt="eclipse image"
+          class="stackImageEclipse"
+        />
+        <img
+          src="../images/vscode.svg"
+          alt="vscode image"
+          class="stackImageVscode"
+        />
       </div>
     </div>
 
     <div class="projectContainer">
-    <div class="myProjectFont">내 프로젝트</div>
-    <div class="projectDetailContainer">
-      <div class="projectDetails">
-    <div class="projectName">비대면 운동 프로젝트</div>
-    <div class="projectLanguage">React, Node.js, MongoDB</div>
-    <div class="projectDetail">운동 강사 매칭 및 웹캠을 통한<br /> 비대면 코칭 웹 서비스입니다.</div>
-    <a
-      class="projectGithub"
-      href="https://github.com/chaeheonjeong/remote-fitness-training"
-      target="_blank"
-      >깃허브 링크</a
-    >
-  </div>
+      <div class="myProjectFont">내 프로젝트</div>
+      <div class="projectDetailContainer">
+        <div class="projectDetails">
+          <div class="projectName">비대면 운동 프로젝트</div>
+          <div class="projectLanguage">React, Node.js, MongoDB</div>
+          <div class="projectDetail">
+            운동 강사 매칭 및 웹캠을 통한<br />
+            비대면 코칭 웹 서비스입니다.
+          </div>
+          <a
+            class="projectGithub"
+            href="https://github.com/chaeheonjeong/remote-fitness-training"
+            target="_blank"
+            >깃허브 링크</a
+          >
+        </div>
 
-  <div class="projectImgContainer">
-  <img
-      src="../images/Rectangle 37.png"
+        <div class="projectImgContainer">
+          <img
+            src="../images/Rectangle 37.png"
             alt="node.js image"
             class="projectImg"
           />
@@ -158,73 +178,131 @@
             alt="node.js image"
             class="projectImg"
           />
-    </div>
-  </div>
-
-  <div class="projectDetailContainer">
-    <div class="projectDetails">
-    <div class="projectName">글로우 소셜</div>
-    <div class="projectLanguage">Kotlin, Firebase</div>
-    <div class="projectDetail">커뮤니티 기반 소셜 네트워크 <br/>서비스입니다.</div>
-    <a
-      class="projectGithub"
-      href="https://github.com/chaeheonjeong/team55"
-      target="_blank"
-      >깃허브 링크</a
-    >
-    </div>
-
-    <div class="projectImgContainer">
-      <img
-          src="../images/Rectangle 37.png"
-                alt="node.js image"
-                class="projectImg"
-              />
-              <img
-                src="../images/Rectangle 39.png"
-                alt="node.js image"
-                class="projectImg"
-              />
-              <img
-                src="../images/Rectangle 35.png"
-                alt="node.js image"
-                class="projectImg"
-              />
         </div>
-    </div>
+      </div>
 
-    <div class="projectDetailContainer">
-      <div class="projectDetails">
-    <div class="projectName">카카오톡 클론 코딩</div>
-    <div class="projectLanguage">Java</div>
-    <div class="projectDetail">카카오톡을 모방한 웹소켓 기반<br/> 실시간 메시징 클론 코딩 프로젝트</div>
-    <a
-      class="projectGithub"
-      href="https://github.com/chaeheonjeong/Clone-KakaoTalk"
-      target="_blank"
-      >깃허브 링크</a
-    >
-    </div>
-
-    <div class="projectImgContainer">
-      <img
-          src="../images/Rectangle 37.png"
-                alt="node.js image"
-                class="projectImg"
-              />
-              <img
-                src="../images/Rectangle 39.png"
-                alt="node.js image"
-                class="projectImg"
-              />
-              <img
-                src="../images/Rectangle 35.png"
-                alt="node.js image"
-                class="projectImg"
-              />
+      <div class="projectDetailContainer">
+        <div class="projectDetails">
+          <div class="projectName">글로우 소셜</div>
+          <div class="projectLanguage">Kotlin, Firebase</div>
+          <div class="projectDetail">
+            커뮤니티 기반 소셜 네트워크 <br />서비스입니다.
+          </div>
+          <a
+            class="projectGithub"
+            href="https://github.com/chaeheonjeong/team55"
+            target="_blank"
+            >깃허브 링크</a
+          >
         </div>
-  </div>
 
+        <div class="projectImgContainer">
+          <img
+            src="../images/Rectangle 37.png"
+            alt="node.js image"
+            class="projectImg"
+          />
+          <img
+            src="../images/Rectangle 39.png"
+            alt="node.js image"
+            class="projectImg"
+          />
+          <img
+            src="../images/Rectangle 35.png"
+            alt="node.js image"
+            class="projectImg"
+          />
+        </div>
+      </div>
+
+      <div class="projectDetailContainer">
+        <div class="projectDetails">
+          <div class="projectName">카카오톡 클론 코딩</div>
+          <div class="projectLanguage">Java</div>
+          <div class="projectDetail">
+            카카오톡을 모방한 웹소켓 기반<br />
+            실시간 메시징 클론 코딩 프로젝트
+          </div>
+          <a
+            class="projectGithub"
+            href="https://github.com/chaeheonjeong/Clone-KakaoTalk"
+            target="_blank"
+            >깃허브 링크</a
+          >
+        </div>
+
+        <div class="projectImgContainer">
+          <img
+            src="../images/Rectangle 37.png"
+            alt="node.js image"
+            class="projectImg"
+          />
+          <img
+            src="../images/Rectangle 39.png"
+            alt="node.js image"
+            class="projectImg"
+          />
+          <img
+            src="../images/Rectangle 35.png"
+            alt="node.js image"
+            class="projectImg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="peerReview">
+      <div class="reviewTitle">함께 개발한 동료들의 평가</div>
+      <div class="reviewCardContainer">
+        <div class="reviewCard">
+          <div class="reviewDetail">
+            "OOO은 개발 역량 뿐 아니라 함께 일하기 너후 좋은 동료였습니다. 항상
+            문제 해결에 적극적이고, 다른 팀원들의 문제에도 발벗고 도움을
+            주었습니다. OO과 함께하는 프로젝트는 항상 성과가 좋았습니다.
+          </div>
+          <div class="peerName">OO프로젝트 팀원, 민재</div>
+        </div>
+        <div class="reviewCard">
+          <div class="reviewDetail">
+            "OOO은 개발 역량 뿐 아니라 함께 일하기 너후 좋은 동료였습니다. 항상
+            문제 해결에 적극적이고, 다른 팀원들의 문제에도 발벗고 도움을
+            주었습니다. OO과 함께하는 프로젝트는 항상 성과가 좋았습니다.
+          </div>
+          <div class="peerName">OO프로젝트 팀원, 민재</div>
+        </div>
+        <div class="reviewCard">
+          <div class="reviewDetail">
+            "OOO은 개발 역량 뿐 아니라 함께 일하기 너후 좋은 동료였습니다. 항상
+            문제 해결에 적극적이고, 다른 팀원들의 문제에도 발벗고 도움을
+            주었습니다. OO과 함께하는 프로젝트는 항상 성과가 좋았습니다.
+          </div>
+          <div class="peerName">OO프로젝트 팀원, 민재</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lastContainer">
+      <div class="last">
+        꼼꼼함과 기술에 대한 집요함으로 어떤 문제든 해결해내는<br />
+        백엔드 개발자가 되겠습니다. <br />감사합니다! 😊
+      </div>
+    </div>
     <button class="contactButton blink">Contact <br />Me</button>
+
+    <script>
+      function onclickButton(type) {
+        if (type === "github") {
+          gtag("event", "click", {
+            event_category: "button",
+            event_label: "github",
+          });
+        } else if (type === "resume") {
+          gtag("event", "click", {
+            event_category: "button",
+            event_label: "resume",
+          });
+        }
+      }
+    </script>
   </body>
 </html>

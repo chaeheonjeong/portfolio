@@ -1,0 +1,282 @@
+nav {
+  display: flex;
+  height: 60px;
+  padding: 0px 24px;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.headerContainer {
+  display: flex;
+  width: 390px;
+  padding: 60px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.badge {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #e6eeff;
+}
+
+.supermanIcon {
+  display: none;
+}
+
+.backendDeveloper {
+  color: #333;
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 1px solid rgb(0, 0, 0);
+  white-space: nowrap;
+  animation: typing 8s steps(40) infinite;
+  max-width: fit-content;
+}
+
+.headerFontG {
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+}
+
+.headerLinkG {
+  box-sizing: border-box;
+  display: flex;
+  width: 120px;
+  padding: 16px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #000;
+  white-space: nowrap;
+}
+
+.headerLinkR {
+  box-sizing: border-box;
+  display: flex;
+  width: 120px;
+  padding: 16px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #403930;
+  white-space: nowrap;
+}
+
+.headerFontR {
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+}
+
+.profileImage {
+  display: none;
+}
+
+.aboutMeContainer {
+  display: flex;
+  padding: 60px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.oneLineAboutMe {
+  align-self: stretch;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 22.5px */
+  letter-spacing: -0.36px;
+}
+
+.aboutMeDetail {
+  align-self: stretch;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+  height: fit-content;
+}
+
+.stackContainer {
+  display: flex;
+  padding: 60px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.stackFontContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.stackFont {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 108.333% */
+  letter-spacing: -0.48px;
+}
+
+.stackDetailFont {
+  align-self: stretch;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-align: start;
+}
+
+.stackLanIdeContainer {
+  padding: 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  align-items: center; /* Vertically aligns items in the middle */
+  gap: 18px;
+}
+
+.stackLanIdeContainer img {
+  width: 70px;
+  height: 70px;
+  margin: 0px 0px;
+}
+
+.stackLanIdeContainer .stackImageNode {
+  width: 60px;
+  height: 65px;
+}
+
+.stackLanIdeContainer .stackImageJava {
+  width: 70px;
+  height: 70px;
+}
+
+.stackLanIdeContainer .stackImageEclipse {
+  width: 70px;
+  height: 65px;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+.stackLanIdeContainer .stackImageIntelliJ {
+  width: 63px;
+  height: 63px;
+}
+
+.stackLanIdeContainer .stackImageGitHub {
+  width: 65px;
+  height: 65px;
+}
+
+.projectContainer {
+  box-sizing: border-box;
+  display: flex;
+  width: 390px;
+  padding: 60px 24px;
+  justify-content: center;
+}
+
+.myProjectFont {
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 108.333% */
+  letter-spacing: -0.48px;
+}
+
+.projectDetailContainer {
+  display: flex;
+  padding: 24px 16px;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  background: #e6eeff;
+}
+
+.projectImgContainer img {
+  width: 88.815px;
+  height: 182.497px;
+  flex-shrink: 0;
+  border-radius: 16.08px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.projectName {
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.projectDetail {
+  padding: 24px 0px;
+}
+
+.projectDetails div {
+  white-space: nowrap;
+}
+
+.contactButton {
+  display: none;
+}
