@@ -25,4 +25,4 @@ jobs:
           aws s3 sync web s3://caffein-dev/
           
       - name: Invalidate cloudfront
-        run: aws cloudfront create-invalidation --distribution-id E2P8RQFV7HZIAR --paths /*
+        run: aws cloudfront create-invalidation --distribution-id E2P8RQFV7HZIAR --paths "/*"
