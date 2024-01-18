@@ -1,0 +1,25 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: AKIAW3MD7IGTKW3ESFVJ
+          aws-secret-access-key: 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
+          aws-region: ap-northeast-2 # AWS S3 버킷이 위치한 리전으로 변경
+
+      - name: Upload to S3
+        run: |
+          aws s3 sync web s3://shinhan-my-portolio/
