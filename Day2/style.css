@@ -479,7 +479,7 @@ header h1 {
   flex-direction: row;
   gap: 40px;
   overflow-x: auto;
-  max-width: 100%; /* Adjust this as needed */
+  max-width: 100%;
 
   /* Hide scrollbar for IE, Edge, and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -502,12 +502,44 @@ header h1 {
 }
 
 .last {
-  align-self: stretch;
   color: #403930;
   font-family: Pretendard;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 60px */
+  line-height: 140%; /* 60px */
   letter-spacing: -0.96px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 182px;
+  background: #fafafa;
+  gap: 24px;
+}
+
+.copyright {
+  color: var(--Dark, #21243d);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 222.979px;
+}
+
+.snsImg {
+  width: 30px;
+  height: 30px;
+  fill: var(--Dark, #21243d);
+}
+
+.snsImgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
 }

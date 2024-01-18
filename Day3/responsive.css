@@ -260,6 +260,7 @@ nav {
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 36px */
+  text-align: right;
 }
 
 .projectDetails {
@@ -279,4 +280,118 @@ nav {
 
 .contactButton {
   display: none;
+}
+
+.peerReview {
+  display: flex;
+  padding: 60px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.reviewTitle {
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 108.333% */
+  letter-spacing: -0.48px;
+}
+
+.reviewCard {
+  display: flex;
+  padding: 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 0px 0px;
+  width: fit-content;
+  height: fit-content;
+  min-width: auto;
+}
+
+.reviewCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow-x: visible;
+  padding: 0px 20px;
+}
+
+.reviewDetail {
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  width: auto;
+}
+
+.peerName {
+  color: #1866af;
+  text-align: right;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 208.333% */
+  width: 100%;
+  text-align: right;
+}
+
+.lastContainer {
+  display: flex;
+  padding: 60px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: #e6eeff;
+  height: fit-content;
+}
+
+.last {
+  align-self: stretch;
+  color: #403930;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+  letter-spacing: -0.48px;
+  line-height: 140%;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
+  background: #fafafa;
+  height: 140px;
+}
+
+.snsImgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.copyright {
+  color: var(--Dark, #21243d);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
