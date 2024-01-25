@@ -15,3 +15,6 @@ I want to become a developer who values experience.
 <h3>👩🏻 About Me</h3>
 
 [![Velog Badge](https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=Velog&logoColor=white&link=https://velog.io/@cogjs3210)](https://velog.io/@cogjs3210)
+
+<h3>🔗 Link</h3>
+https://d1q16lh4dn9hvg.cloudfront.net/
